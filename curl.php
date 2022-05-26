@@ -5,32 +5,31 @@ $contact .= "38"; //ddd
 $contact  .= "999400531"; //numero do whatsapp
 $contact  .= "@c.us";
 
-$headers = array(
-
-    "Content-Type"=> "application/x-www-form-urlencoded",
-    "Content-Length" => "60",
-    "Connection"=>"keep-alive",
-    "X-Powered-By"=>"Express",
-    "Access-Control-Allow-Origin"=> "*",
-    "Access-Control-Allow-Headers"=> "X-Requested-With",
-    "ETag"=>'W/"3c-xEMD4FAMWk9xOOs4AuzGt1py7rA'
-);
+$headers = ['Content-Type:'=>'application/json; charset=utf-8'];
 
 $fields = array(
     'cmd'=> 'chat',
-    'id'=> '4AM6CCDBO1',
-    'to'=> '5538999400531@c.us',
+    'id'=> '4AM6CC1',
+    'to'=> '55+38+999400531@c.us',
     'msg'=>'ds'
 );
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://v1.utalk.chat/send/fx42tr2/');
+curl_setopt($ch, CURLOPT_URL, 'https://v1.utalk.chat/send/*****colocar token*******/');
 curl_setopt($ch, CURLOPT_POST, true);
+
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $fields) ;
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields)) ;
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
+try{
+    curl_exec($ch);
+}catch(Exception $e){
+    echo $e;
+}
 
-$result = curl_exec($ch);
 
 curl_close($ch);
+//https://v1.utalk.chat/send/fx42tr2//?cmd=chat&id=4AM6CCDBO1&to=38999400531&msg=hello world
 ?>
+
