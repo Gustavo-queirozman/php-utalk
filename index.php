@@ -1,5 +1,5 @@
 <?php
-$token = "fx42tr2"; //Coloque aqui o WhatsWeb ID (token)
+$token = ""; //Coloque aqui o WhatsWeb ID (token)
 $url = "https://v1.utalk.chat/send/$token";
 
 //Coloque true em apena um
