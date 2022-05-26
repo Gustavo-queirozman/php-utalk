@@ -2,13 +2,13 @@
 $token = ""; //Coloque aqui o WhatsWeb ID (token)
 $url = "https://v1.utalk.chat/send/$token";
 
-//Coloque true em apena um
+//Coloque true em apenas um
 $text = false; //Enviar mensagem com texto
 $arquivo = false; //Enviar mensagem com mídia (Imagem, PDF, Aúdio, Video, TXT etc..)
 $linkeMiniatura = true; //Enviar mensagem com link e miniatura (thumb)
 
 $id = round(microtime(true) * 1000); //Gera número randômico.
-$mensagem = "Olá! Sou Gustavo responsável pelo suporte técnico da LR Applications, como posso ajudar?";
+$mensagem = "Olá! Sou Gustavo responsável pelo suporte técnico da LR Applications, como posso ajudar?"; //A meensagem que deseja enviar
 $numero = "55"; //codigo pais, 55 se for enviar msg para numeros do brasil
 $numero .= "38"; //ddd
 $numero .= "999400531"; //numero que você quer enviar a mensagem
