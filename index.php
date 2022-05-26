@@ -8,7 +8,7 @@ $arquivo = false; //Enviar mensagem com mídia (Imagem, PDF, Aúdio, Video, TXT 
 $linkeMiniatura = true; //Enviar mensagem com link e miniatura (thumb)
 
 $id = round(microtime(true) * 1000); //Gera número randômico.
-$mensagem = "Olá! Sou Gustavo responsável pelo suporte técnico da LR Applications, como posso ajudar?"; //A meensagem que deseja enviar
+$mensagem = "Olá! Sou Gustavo responsável pelo suporte técnico da lrapplications, como posso ajudar?"; //A meensagem que deseja enviar
 $numero = "55"; //codigo pais, 55 se for enviar msg para numeros do brasil
 $numero .= "38"; //ddd
 $numero .= "999400531"; //numero que você quer enviar a mensagem
